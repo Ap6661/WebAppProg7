@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>  
+
+<style>
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  background-color: rgb(20, 20, 25);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+a {
+  color: rgb(0, 255, 0);
+}
+
+h1 {
+  color: rgb(150, 250, 140);
+}
+
+h2 {
+  color: rgb(150, 250, 140);
+}
+
+h3 {
+  color: rgb(150, 250, 140);
+}
+
+p {
+  color: rgb(150, 250, 140);
+}
+
+.box {
+  background-color: #141914;
+  border: 3px double rgb(150, 250, 150);
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+}
+</style>
+<!--     <style> -->
+<!-- .flex-container { -->
+<!--   display: flex;  flex-direction:row; -->
+<!--   background-color: red; -->
+<!-- } -->
+<!---->
+<!-- .flex-container > div {  /*div children of the flex container*/ -->
+<!--   background-color: #f1f1f1;  -->
+<!--   margin: 10px;  padding: 20px;  font-size: 30px; -->
+<!-- } -->
+<!---->
+<!--    /* Responsive layout */ -->
+<!--    @media (max-width: 600px) {  -->
+<!--      .flex-container{ -->
+<!--        flex-direction:column; -->
+<!--        background-color: green; -->
+<!--      } -->
+<!--    } -->
+<!--     </style> -->
+
+  <title>Bosch Finds Avians</title>
+
+  </head>
+
+
+
+<body>
+
+  <div class='box' style='border-style: dotted;'>
+    <h1>Bosch Finds Avians</h1>
+  </div>
+
+  <div class='box'>
+    <p>
+    Click on the locations to find the flowers, watch out for the poison ivy
+    </p>
+  </div>
+
+  <div class='box'>
+    <p id='locations'>
+    Number of locations checked is zero.
+    </p>
+  </div>
+
+  <div class='box'>
+    <p id='score'>
+    Score is zero.
+    </p>
+  </div>
+
+  <div class='box'>
+    <p id='help'>
+    Help report
+    </p>
+  </div>
+
+  <div class='box'>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+    <div class='d-flex'>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+      <div><img width='100' src='https://picsum.photos/id/95/2048/2048'></div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- <img width='200' src='https://picsum.photos/id/95/2048/2048'> -->
+  <!-- <img width='200' src='https://www.publicdomainpictures.net/pictures/130000/velka/poison-ivy-1437084805leK.jpg'> -->
+  <!-- <img width='200' src='https://www.publicdomainpictures.net/pictures/410000/velka/image-1626408487K9J.jpg'> -->
+  <!-- <img width='200' src='https://www.publicdomainpictures.net/pictures/90000/velka/pink-lily-in-pond.jpg'> -->
+  <!-- <img width='200' src='https://www.publicdomainpictures.net/pictures/180000/velka/background-scrapbook-daisy-flower.jpg'> -->
+
+	<!-- 	<div class="flex-container" id="target"> -->
+	<!-- 	  <div>row item 1</div>    -->
+	<!-- 	  <div>row item 2</div>   -->
+	<!-- 	  <div>row item 3</div>   -->
+	<!-- 	</div> -->
+	<!---->
+	<!-- <p> Press the button to create an new element of type div and then add it to the container. -->
+	<!-- 	</p> -->
+	<!-- 	<button onclick="makeNewDiv()">Add one</button> -->
+	
+	
+</body>
+
+<!-- <script> -->
+<!-- 	function makeNewDiv(){ -->
+<!-- 		/* make the div and its text */ -->
+<!-- 		let element = document.createElement("div") -->
+<!-- 		element.innerHTML = "an item after 3" -->
+<!-- 		element.style.color = "orange" -->
+<!---->
+<!-- 		/* add it to the container */ -->
+<!-- 		let container = document.getElementById('target') -->
+<!-- 		container.appendChild(element) -->
+<!---->
+<!-- 	} -->
+<!-- </script> -->
+
+</html>	
