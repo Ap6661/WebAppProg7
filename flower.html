@@ -190,6 +190,9 @@ p {
           img.src = img_src.poison;
           score -= 4;
           gameOver = true;
+          document.getElementById('score').innerHTML = "Game Over<br/>Score is " + score;
+          document.getElementById('locations').innerHTML = "Number of locations checked is " + locationsVisited;
+          return;
         }
         if (roseLocation == position) {
           img.src = img_src.rose;
@@ -203,7 +206,10 @@ p {
           img.src = img_src.daisy;
           score += 1;
         }
-      }
+
+        document.getElementById('score').innerHTML = "Score is " + score;
+        document.getElementById('locations').innerHTML = "Number of locations checked is " + locationsVisited;
+      } 
     }
 
     function help() {
