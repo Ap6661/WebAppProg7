@@ -26,8 +26,12 @@
   </div>
 
 
-  <button type="button" class="btn btn-primary">Go</button>
+
+  <button type="button" class="btn btn-primary" onclick='beginTime()'>Go</button>
   <button type="button" class="btn btn-primary" onclick='recordTime()'>Halt</button>
+
+  <h3 id='countdown'>
+  </h3>
 
   <script>
     var haltTime = 0; 
@@ -35,6 +39,24 @@
     function recordTime() {
       haltTime = Date.now();
       console.log(haltTime);
+    }
+
+    function beginTime() {
+      var countdown = document.getElementById('countdown');
+      for (var i = 0; i <= 5; i++) {
+        setTimeout(function(a) {
+          countdown.innerHTML = 5 - a
+        }, i * 1000, i);
+      }
+      setTimeout(function() {
+        target = document.getElementById("target");
+        if (haltTime == 0) {
+          target.innerHTML = "Not Soon Enough";
+        } else {
+          targetTime = Date.now();
+          target.innerHTML = "Time was " + (targetTime - haltTime);
+        }
+      }, 5000);
     }
   </script>
 
