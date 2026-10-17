@@ -44,7 +44,9 @@
 	
 	<p> Press the button to create an new element of type div and then add it to the container.
 		</p>
+		<button onclick="addFront()">Add front</button>
 		<button onclick="makeNewDiv()">Add end</button>
+		<button onclick="removeEveryOther()">Remove</button>
 	
 	
 </body>
@@ -52,7 +54,6 @@
 	function makeNewDiv(){
 		/* make the div and its text */
 		let element = document.createElement("div")
-		element.innerHTML = "an item after 3"
 		element.style.color = "orange"
 
     let val = document.getElementsByTagName("input")[0].value;
@@ -62,8 +63,36 @@
 		/* add it to the container */
 		let container = document.getElementById('target')
 		container.appendChild(element)
-
-		
 	}
+
+	function addFront(){
+		/* make the div and its text */
+		let element = document.createElement("div")
+		element.style.color = "orange"
+
+    let val = document.getElementsByTagName("input")[0].value;
+    element.innerHTML = val;
+    element.className = "divlist";
+
+		/* add it to the container */
+		let container = document.getElementById('target');
+		container.insertBefore(element, container.firstChild);
+	}
+
+  function removeEveryOther() {
+    let items = document.getElementsByClassName("divlist");
+    let offset = (items.length +1) % 2;
+    if (items.length == 1 || items.length == 2) {
+      items[0].remove();
+    } else {
+      for (let i = items.length - 1 - offset; i >= 0; i = i - 2)
+      {
+        //if (i % 2 == offset) 
+        {
+          items[i].remove()
+        }
+      }
+    }
+  }
 </script>
 </html>	
